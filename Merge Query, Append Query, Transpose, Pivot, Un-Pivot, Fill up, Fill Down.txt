@@ -1,0 +1,71 @@
+                                     Merge Queries
+
+Conditions: One or more then one common column should be present in both the tables.
+Data Type should be same.
+Column Sequense should be same.
+
+
+Left Join: All the records or rows from left table and matching from right table.
+Example: Table A    B
+           1        1
+           2        2
+           3        4
+           5        6
+
+Output: 1  1
+        2  2
+        3  null
+        5  null
+
+
+Right Join: All the records from right table and matching from left table.
+Example: Table A    B
+           1        1
+           2        2
+           3        4
+           5        6
+
+Output: 1       1
+        2       2
+        null    4
+        null    6
+        
+Full Join: All rows from both the tables including matching & un-matched rows.
+
+Inner Join: Only matching rows from both the tables.
+
+Left Anti: It will pick only un-matched rows from Left table to Right Table.
+Example: Table A    B
+           1        1
+           2        2
+           3        4
+           5        6
+
+Output: 3   null
+        5   null
+
+
+Right Anti: It will pick only un-matched rows from Right Table to Left Table.
+Example: Table A    B
+           1        1
+           2        2
+           3        4
+           5        6
+
+Output: null  4
+        null  6
+
+
+                                Append Queries
+
+Conditions: Headers in both the tables should be same.
+            Data Type should be same.
+            Number of columns should be same.
+
+
+
+                                 Unpivot
+To convert Columns into Rows  or  To convert Horizontal data into Vertical Data.
+
+                                  Pivot
+To convert Rows into Column or Vertical data into Horizontal data.
